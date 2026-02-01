@@ -1,20 +1,33 @@
-# OCRA_STLINK_MICRO_DEBUG
-Ultra small and low cost STM debugger PCB footprint for Fusion and programmer PCB.
+# ORCA STLINK micro debug tool
+
+Ultra small and low cost STM debugger PCB footprint for Fusion and with programmer PCB.
 
 ## PCB footprint for Fusion 360 
 
-Make sure the pads are accessible with the pro
-
 ![Screenshot 2025-05-20 134302](https://github.com/user-attachments/assets/531bab43-9d1d-4de6-a8a3-b961844df507)
 
-## Programmer PCB boards
+## Programmer PCB boards and Peg
 
 ![Screenshot 2025-05-20 134031](https://github.com/user-attachments/assets/5c26266a-ee91-44c1-94a9-de8c51d97203)
 
 ![Screenshot 2025-05-20 134202](https://github.com/user-attachments/assets/07ed76ee-7de9-4ba7-92e0-51fcca13b8b5)
 
-If you purchase on the pogo pin connectors, you can replace the boards with the design above and then connect to your STLINK debugger to program your board.
+You can find the peg for programming of Aliexpress. This comes disassembled, so you can easily replace the board with the ORCA STLINK micro debug tool PCBs and then connect to your STLINK debugger to program your board.
 
 ![image](https://github.com/user-attachments/assets/611b3086-da45-4993-9a36-0a9a838627de)
+
+You will also need to buy a header for your STLINK programmer. This is a 14 pin header, with a 1.27mm pitch. I used one like this:
+
+<img width="772" height="421" alt="image" src="https://github.com/user-attachments/assets/344395d6-9475-4b33-a5fc-c332060842d0" />
+
+Alterantively, I've broken our all the STLINK header pins with large 1mm header pins, so you can connect using easily sources 2.54mm header pins, or you can directly solder wires to the pads.
+
+## PCB Design guide instructions
+
+1. Make sure the pads are accessible with the programmer on your PCB design. The component should be near the side of your board, so it can be easily clipped. Ideally make sure no PCB parts obstruct the clip as it's moved into place, as your pogo pins on the programmer could scratch against the components on the board. Always have the peg open all the way when placing the programmer, so the pogo pins do not scratch the PCB.
+
+2. You also need to consider the opposite side of the PCB, as the peg will press against this side of the board to hold the programmer in place. Don't place fragile parts in either areas to prevent damage.
+
+## Send some love if you found this helpful
 
 <a href="https://www.buymeacoffee.com/orcamick" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
